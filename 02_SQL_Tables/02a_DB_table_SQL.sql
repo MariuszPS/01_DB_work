@@ -34,6 +34,9 @@ INSERT INTO test(name,age) VALUES ("Grizabella",29);
 INSERT INTO test(age,name) VALUES (39,"Alonso");
 INSERT INTO test VALUES ();
 
+INSERT INTO test(age,name) VALUES (39,"Alonso");
+INSERT INTO test(age,name) VALUES (39,"Alonso");
+
 
 /*--- Inhalte der Tabelle anzeigen ----*/
 SELECT * FROM test;
