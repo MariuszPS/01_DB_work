@@ -19,8 +19,8 @@ USE boo;
 /* Tab.test anlegen, falls noch nicht vorhanden*/
 CREATE TABLE test
 (
-	name VARCHAR(20),
-	age INT
+	name VARCHAR(20) NOT NULL DEFAULT "TBA",
+	age INT NOT NULL DEFAULT 0
 );
 
 /* Alle Tabellen in der DB anzeigen*/
