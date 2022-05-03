@@ -5,7 +5,7 @@ mysql-ctl start
 sudo service mysql start
 
 // MySQL DB-Stop
-mysql-ctl stop
+mysql-ctl stop	
 
 // MySQL DB-CLI start
 // Command Line Interface
