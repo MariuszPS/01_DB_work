@@ -16,10 +16,10 @@ CREATE DATABASE IF NOT EXISTS boo;
 /* DB auswählen*/
 USE boo;
 
-CREATE TABLE test
+/* Tab.test anlegen, falls noch nicht vorhanden*/
+CREATE TABLE IF NOT EXISTS test
 (
 	name VARCHAR(20),
-    fur-color VARCHAR(20);
 	age INT
 );
 

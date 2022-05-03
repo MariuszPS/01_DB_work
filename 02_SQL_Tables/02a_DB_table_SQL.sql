@@ -16,6 +16,7 @@ CREATE DATABASE IF NOT EXISTS boo;
 /* DB auswählen*/
 USE boo;
 
+/* Tab.test anlegen, falls noch nicht vorhanden*/
 CREATE TABLE test
 (
 	name VARCHAR(20),
