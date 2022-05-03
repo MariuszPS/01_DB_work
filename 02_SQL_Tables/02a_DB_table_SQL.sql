@@ -7,6 +7,30 @@
 /* Datenbanken auf Server anzeigen */
 SHOW DATABASES;
 
-CREATE DATABASE boo;
+/* DB boo löschen, falls vorhanden*/
+DROP DATABASE IF EXISTS boo;
 
-SHOW DATABASES;
+/* DB boo anlegen, falls noch nicht vorhanden*/
+CREATE DATABASE IF NOT EXISTS boo;
+
+/* DB auswählen*/
+USE boo;
+
+CREATE TABLE test
+(
+	name VARCHAR(20),
+	age INT
+);
+
+/* Alle Tabellen in der DB anzeigen*/
+SHOW TABLES;
+
+/* Strucktur der Tabelle anzeigen*/
+DESCRIBE test;
+
+/* -----Daten------*/
+INSERT INTO test(name,age) VALUES ("Grizabella",29);
+INSERT INTO test(age,name) VALUES (39,"Alonso");
+
+/*--- Inhalte der Tabelle anzeigen ----*/
+SELECT * FROM test;
