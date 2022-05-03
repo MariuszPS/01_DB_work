@@ -19,6 +19,7 @@ USE boo;
 CREATE TABLE test
 (
 	name VARCHAR(20),
+    fur-color VARCHAR(20);
 	age INT
 );
 
