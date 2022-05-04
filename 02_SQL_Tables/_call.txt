@@ -1,3 +1,4 @@
 source 02_SQL_Tables/02a_DB_table_SQL.sql
 source 02_SQL_Tables/02b_DB_table_SQL.sql
 source 02_SQL_Tables/02c_DB_table_SQL.sql
+source 02_SQL_Tables/02d_DB_table_SQL.sql
