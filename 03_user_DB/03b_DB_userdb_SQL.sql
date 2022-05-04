@@ -21,7 +21,7 @@ VALUES ("max","Max","Mütze","1234");
 INSERT INTO boo.users(userName,firstName,famillyName,userPWD)
 VALUES ("maxine","Maxine","Mützerich","#7xD0");
 INSERT INTO boo.users(userName,firstName,famillyName,userPWD)
-VALUES ("max","Max","Mützerich","user1234");
+VALUES ("maxl","Max","Mützerich","user1234");
 
 /* Inhalte : ErgebnissALTERtabelle */
 SELECT * FROM boo.users;
