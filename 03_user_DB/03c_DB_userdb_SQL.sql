@@ -37,5 +37,10 @@ ADD
 /* Struktur */
 DESCRIBE boo.users;
 
+/* Uptade von Daten */
+UPDATE boo.users SET userPLZ = "72213" WHERE id = 1;
+UPDATE boo.users SET userPLZ = "70481" WHERE id = 2;
+
+
 /* Inhalte : Ergebnistabelle */
 SELECT * FROM boo.users;
