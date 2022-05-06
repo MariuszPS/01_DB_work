@@ -10,6 +10,7 @@
 
 -- Eingrenzen/Filtern WHERE & AND/OR etc.
 -- Scharfe Suche
+/*
 SELECT
 	ticker AS "SYM",
     c_name AS "Unternehmen",
@@ -37,5 +38,36 @@ ORDER BY industry DESC
 #ORDER BY price DESC 
 
 -- Begrenzung
+LIMIT 20
+;
+*/
+
+-- Eingrenzen/Filtern WHERE & LIKE + Parameter 
+-- Usscharfe Suche
+SELECT
+    ticker AS "SYM",
+    c_name AS Unternehmen,
+    industry Branche
+FROM stocks.ccc
+
+-- scharfe Suche nach Strings
+#WHERE industry = "Media"
+
+-- unschärfere Suchen --
+-- Branchenname beginnt mit ... , dahinter beliebige Chars
+#WHERE industry LIKE "Air%"
+-- Branchenname endet mit ... , davor beliebige Chars
+#WHERE industry LIKE "%ment"
+-- Branchenname enthaelt ...
+#WHERE industry LIKE "%ood%"
+
+-- Branchenname endet/beginnt mit ... , danach/davor/inmitten genau _ Char
+#WHERE industry LIKE "__dia"
+#WHERE industry LIKE "Med__"
+#WHERE industry LIKE "M___a"
+WHERE industry LIKE "_ir%"
+#WHERE industry LIKE "_ood%"
+
+ORDER BY industry ASC
 LIMIT 20
 ;
