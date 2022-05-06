@@ -65,9 +65,13 @@ FROM stocks.ccc
 #WHERE industry LIKE "__dia"
 #WHERE industry LIKE "Med__"
 #WHERE industry LIKE "M___a"
-WHERE industry LIKE "_ir%"
+#WHERE industry LIKE "_ir%"
 #WHERE industry LIKE "_ood%"
 
+#WHERE industry LIKE "%ment"
+#WHERE industry LIKE "%ment" AND industry NOT LIKE "%ipment"
+WHERE industry LIKE "%ment" AND industry NOT LIKE "%ipment" AND industry NOT LIKE "%tain%"
 ORDER BY industry ASC
+
 LIMIT 20
 ;
